@@ -13,7 +13,7 @@
 
 body {
   font-size: 62.5%;
-  background-color: burlywood;
+  background-color: var(--dark);
   color: var(--light);
 }
 
