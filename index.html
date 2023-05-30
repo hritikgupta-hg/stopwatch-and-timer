@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="main.js"></script>
+    <title>Stopwatch & Timer</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="option-container">
+            <div class="options option-stopwatch active-option">Stopwatch</div>
+            <div class="options option-timer">Timer</div>
+        </div>
+
+        <div class="slider">
+            <div class="slide watch">
+                <div class="time">
+                    00:00:00:000
+                </div>
+                <div class="controls">
+                    <button id="start-stopwatch">Start</button>
+                    <button id="stop-stopwatch">Stop</button>
+                    <button id="reset-stopwatch">Reset</button>
+                </div>
+            </div>
+
+            <div class="slide timer">
+                <form class="timer-form">
+                    <input id="timer-hr" type="number" placeholder="hr" size="23">
+                    <input id="timer-min" type="number" placeholder="min" max="59">
+                    <input id="timer-sec" type="number" placeholder="sec" max="59">
+                </form>
+                <div class="time time-timer hidden">
+                    00:00:00
+                </div>
+                <div class="message hidden">
+                    Time over ⌚
+                </div>
+                <div class="controls">
+                    <button id="start-timer">Start</button>
+                    <button id="reset-timer">Reset</button>
+                </div>
+
+            </div>
+
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
